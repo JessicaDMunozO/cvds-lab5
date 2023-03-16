@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <script>
+			function validateNumber() {
+				let x = document.forms["form"]["id"].value;
+				if (isNaN(x)){
+					alert("It must be an integer");
+					return true;
+				}
+			}
+		</script>
+		<form name="form" action="http://localhost:8080/otherServlet" onsubmit="return validateNumber()" method="POST">
+			<label for="id">id:</label><br>
+			<input type="text" id="id" name="id"><br>
+			<input type="submit" value="Submit">
+		</form>
+    </body>
+</html>
