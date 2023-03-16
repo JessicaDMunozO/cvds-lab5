@@ -1,5 +1,7 @@
-.idea
-.classpath
-.settings
 target
+.vscode
+.classpath
+.idea
 .bak
+
+.settings
