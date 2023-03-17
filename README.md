@@ -69,7 +69,7 @@ mientras que el parámetro -v muestra toda la información detallada.
 1. Se crea un proyecto maven nuevo con el arqueotipo web, con el comando `mvn arcgetype:generate -Dfilter=maven-archetype-webapp`. A continuación se pueden
 ver los valores con los que se creó y la validación de que fue construido satisfactoriamente.
 
-!proyecto_maven](https://user-images.githubusercontent.com/123814482/226031455-3a68816e-b0e2-4a01-9610-7d8aecc99aa4.jpg)
+![proyecto_maven](https://user-images.githubusercontent.com/123814482/226031455-3a68816e-b0e2-4a01-9610-7d8aecc99aa4.jpg)
 
 Luego se crea la clase *SampleServlet* con el código dado. Esta clase es la que ayuda a responder las solicitudes HTTP de las URL que atiende `/helloServlet`. 
 En este caso genera una respuesta de saludo y puede incluir el nombre indicado como parámetro dentro de la URL.
