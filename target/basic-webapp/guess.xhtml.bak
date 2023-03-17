@@ -6,15 +6,19 @@ xmlns:p="http://primefaces.org/ui%22%3E">
 	<h:head>
 	</h:head>
 	<h:body>
+		<h1>Adivina el número!</h1>
 		<h:form id="guess_form">
-			<h:outputLabel value="#{bean.getNumeroAdivinar()}"
-			style="display: none;"/>
-			<h:inputText id="numero" binding="#{input}"/>
-			<h:outputLabel value="#{bean.getIntentos()}"/>
-			<h:outputLabel value="#{bean.getEstado()}"/>
-			<h:outputLabel value="#{bean.getPremioAcumulado()}"/>
-			<h:commandButton update="guess_form" actionListener="#{bean.guess(input.value)}" value="Enviar número"/>
-			<h:commandButton update="guess_form" actionListener="#{bean.reset()}" value="Reiniciar juego"/>
+			<h:panelGrid>
+				<h:outputLabel value="#{guessBean.getNumeroAdivinar}"
+				style="display: none"/>
+				<h:inputText id="input" binding="#{input}"/>
+				<h:outputLabel value="#{guessBean.getIntentos}"/>
+				<h:outputLabel value="#{guessBean.getEstado}"/>
+				<h:outputLabel value="#{guessBean.getPremioAcumulado}"/>
+				
+				<h:commandButton value="Enviar" update="guess_form" actionListener="#{guessBean.guess(input.value)}"></h:commandButton>
+				<h:commandButton value="Reiniciar" update="guess_form" actionListener="#{guessBean.restart}"></h:commandButton>
+			</h:panelGrid>
 		</h:form>
 	</h:body>
 </html>

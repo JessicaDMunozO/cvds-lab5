@@ -1,4 +1,5 @@
-main\java\edu\eci\cvds\servlet\model\Todo.class
-main\java\edu\eci\cvds\servlet\OtherServlet.class
+edu\eci\cvds\servlet\model\Todo.class
+edu\eci\cvds\servlet\OtherServlet.class
 edu\eci\cvds\servlet\SampleServlet.class
-main\java\edu\eci\cvds\servlet\Service.class
+edu\eci\cvds\servlet\Service.class
+edu\eci\cvds\bean\bean.class

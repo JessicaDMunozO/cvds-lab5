@@ -1,4 +1,4 @@
-package main.java.edu.eci.cvds.servlet;
+package edu.eci.cvds.servlet;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,7 +8,8 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.List;
 import com.google.gson.Gson;
-import main.java.edu.eci.cvds.servlet.model.Todo;
+
+import edu.eci.cvds.servlet.model.Todo;
 
 public class Service {
     public static Todo getTodo(int id) throws MalformedURLException, IOException {

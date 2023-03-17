@@ -1,4 +1,4 @@
-package main.java.edu.eci.cvds.servlet;
+package edu.eci.cvds.servlet;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import main.java.edu.eci.cvds.servlet.model.*;
+import edu.eci.cvds.servlet.model.Todo;
 
 @WebServlet(urlPatterns = "/otherServlet")
 

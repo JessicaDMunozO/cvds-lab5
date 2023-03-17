@@ -1,7 +1,5 @@
 package edu.eci.cvds.bean;
 
-import java.util.Random;
-
 import javax.annotation.ManagedBean;
 import javax.enterprise.context.ApplicationScoped;
 
