@@ -502,7 +502,7 @@ Luego de usar el botón de reiniciar
 
 ![incognito](https://user-images.githubusercontent.com/123814482/226063064-e819e57d-42c5-4738-990f-3f3743f86c99.jpg)
 
-Se puede observar que en el modo incógnito retoma los valores que se obtuvieron en una pestaña del navegador normal. Sin embargo si se cambia la anotación *@ApplicationScoped* por *@SessionScoped* al realizar la misma prueba anterior se puede ver que los toma como dos ingresos diferentes idenpendiente de que sean sobre la misma aplicación.
+Se puede observar que en el modo incógnito retoma los valores que se obtuvieron en una pestaña del navegador normal. Sin embargo si se cambia la anotación *@ApplicationScoped* por *@SessionScoped* al realizar la misma prueba anterior se puede ver que los toma como dos ingresos diferentes idependiente de que sean sobre la misma aplicación.
 
 - En el navegador 
 
