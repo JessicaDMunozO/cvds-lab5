@@ -1,18 +1,24 @@
 package edu.eci.cvds.bean;
 
-import javax.annotation.ManagedBean;
-import javax.enterprise.context.ApplicationScoped;
+import java.util.ArrayList;
 
-@ManagedBean(value = "guessBean")
+//import javax.annotation.ManagedBean;
+//import javax.enterprise.context.ApplicationScoped;
+import javax.faces.bean.ApplicationScoped;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
 
-@ApplicationScoped
+@ManagedBean(name = "bean")
+
+@SessionScoped
 
 public class bean {
-    private int numeroAdivinar = (int) (Math.random() * (100000 + 1));
+    private int numeroAdivinar = (int) (Math.random() * (10 + 1));
     private int intentos = 0;
     private int premioAcumulado = 100000;
     private String estado = "Jugando";
     private int penalizacionFalla = 10000;
+    private ArrayList<Integer> listaIntentos = new ArrayList<>();
 
     public bean() {
     }
@@ -57,12 +63,21 @@ public class bean {
         this.penalizacionFalla = penalizacionFalla;
     }
 
+    public ArrayList<Integer> getListaIntentos() {
+        return listaIntentos;
+    }
+
+    public void setListaIntentos(ArrayList<Integer> listaIntentos) {
+        this.listaIntentos = listaIntentos;
+    }
+
     public void guess(int numero) {
+        listaIntentos.add(numero);
+        intentos += 1;
         if (numero == numeroAdivinar) {
             setEstado("Ganó");
             System.out.println(getEstado() + " $" + getPremioAcumulado());
         } else {
-            intentos += 1;
             if (premioAcumulado > penalizacionFalla) {
                 premioAcumulado -= penalizacionFalla;
             } else {
@@ -73,9 +88,11 @@ public class bean {
     }
 
     public void restart() {
-        setNumeroAdivinar((int) (Math.random() * (100000 + 1)));
+        setNumeroAdivinar((int) (Math.random() * (10 + 1)));
         setPremioAcumulado(100000);
         setEstado("Jugando");
+        setIntentos(0);
+        listaIntentos.clear();
     }
 
 }

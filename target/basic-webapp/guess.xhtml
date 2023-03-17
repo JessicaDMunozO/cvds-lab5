@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3c.org/1999/xhtml"
-xmlns:h="http://xmlns.jcp.org/jsf/html"
-xmlns:p="http://primefaces.org/ui%22%3E">
+<html xmlns="http://www.w3.org/1999/xhtml"    
+	xmlns:h="http://java.sun.com/jsf/html"    
+	xmlns:f="http://java.sun.com/jsf/core"    
+	xmlns:p="http://primefaces.org/ui">
 
 	<h:head>
 	</h:head>
+	<body>
 	<h:body>
 		<h1>Adivina el número!</h1>
 		<h:form id="guess_form">
 			<h:panelGrid>
-				<h:outputLabel value="#{guessBean.getNumeroAdivinar}" style="display: none"/>
-				<h:inputText id="input" binding="#{input}"/>
-				<h:outputLabel value="#{guessBean.getIntentos}"/>
-				<h:outputLabel value="#{guessBean.getEstado}"/>
-				<h:outputLabel value="#{guessBean.getPremioAcumulado}"/>
+				<h:outputLabel value="Adivinar: #{bean.getNumeroAdivinar()}" style="display: none;"/>
+				<h:inputText id="numero" binding="#{input}"/>
+				<h:outputLabel value="Intentos: #{bean.getIntentos()}"/>
 				
-				<h:commandButton value="Enviar" update="guess_form" actionListener="#{guessBean.guess(input.value)}"></h:commandButton>
-				<h:commandButton value="Reiniciar" update="guess_form" actionListener="#{guessBean.restart}"></h:commandButton>
+				<p:dataTable var="lista">
+					<p:column>
+						<f:facet name="header">
+							<h:outputText value="últimos intentos"/>
+						</f:facet>
+						<h:outputText value="#{bean.getlistaIntentos()}"/>
+					</p:column>
+				</p:dataTable>
+				
+				<h:outputLabel value="Estado: #{bean.getEstado()}"/>
+				<h:outputLabel value="Premio Acumualdo: #{bean.getPremioAcumulado()}"/>
+				
+				<h:commandButton update="guess_form" actionListener="#{bean.guess(input.value)}" value="Enviar número"/>
+				<h:commandButton update="guess_form" actionListener="#{bean.restart()}" value="Reiniciar juego"/>
 			</h:panelGrid>
 		</h:form>
 	</h:body>
+	</body>
 </html>
