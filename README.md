@@ -240,6 +240,94 @@ Con un parámetro que no está definido
 ![no_definido](https://user-images.githubusercontent.com/123814482/226057447-1beab9e6-d700-4afe-b382-7e94fbfe6661.jpg)
 
 ## PARTE III.
+14. Se realiza la misma implementación anterior para el método *doPost*
+```
+    ...
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String print_response = "";
+        Writer responseWriter = resp.getWriter();
 
+        try {
+            Optional<String> optNumber = Optional.ofNullable(req.getParameter("id"));
+            Todo todo = Service.getTodo(Integer.valueOf(optNumber.get()));
+            resp.setStatus(HttpServletResponse.SC_OK);
 
+            ArrayList<Todo> todosList = new ArrayList<>();
+            todosList.add(todo);
+            print_response = Service.todosToHTMLTable(todosList);
+
+        } catch (FileNotFoundException notFound) {
+            resp.setStatus(HttpServletResponse.SC_NOT_FOUND);
+            print_response = "No existe un item con el identificador dado";
+
+        } catch (NumberFormatException format) {
+            resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            print_response = "Requerimiento inválido";
+
+        } catch (MalformedInputException malformed) {
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            print_response = "Error interno en el servidor";
+
+        } catch (Exception e) {
+            resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            print_response = "Requerimiento inválido";
+        }
+
+        responseWriter.write(print_response);
+    }
+```
+
+15. Se crea el archivo *index.html* en el directorio *src/main/webapp/* y se crea un formulario para ingresar el número y que sea validado, se usa un botón.
+```
+    <!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+		<h1>
+			Hello World!
+		</h1>
+        <script>
+			function validateNumber() {
+				let x = document.forms["form"]["id"].value;
+				if (isNaN(x)){
+					alert("It must be an integer");
+					return true;
+				}
+			}
+		</script>
+		<form name="form" action="otherServlet" onsubmit="return validateNumber()" method="POST">
+			<label for="id">id:</label><br>
+			<input type="text" id="id" name="id"><br>
+			<input type="submit" value="Submit">
+		</form>
+    </body>
+</html>
+```
+
+16. Se recompila y se ejecuta. En el browser se escribe *localhost:8080*
+    
+![POST](https://user-images.githubusercontent.com/123814482/226058825-7c52afeb-6fec-4890-9176-45debb00486a.jpg)
+    
+Se observa lo siguiente al dar en el botón. 
+    
+![resultado](https://user-images.githubusercontent.com/123814482/226058956-5e657afa-a758-4ede-aca9-e83d5a29ef3e.jpg)
+    
+17. Ahora se cambia el método a *GET* en el archivo *index.html* se recompila y se ejecuta.
+    
+![GET](https://user-images.githubusercontent.com/123814482/226059256-3a86149f-1801-4761-b295-bf9e62fab2d5.jpg)
+
+Se observa lo siguiente al dar en el botón.
+    
+![resultado2](https://user-images.githubusercontent.com/123814482/226059311-e3405600-ff7a-4e30-a6c0-45ae29d81759.jpg)
+
+Lo que cambia entre un método y otro es que cuando trae el mensaje del id indicado, la URL con *POST* es *localhost:8080/otherServlet* mientras que con *GET* le agrega el parámetro del id *localhost:8080/otherServlet?id=14*
+  
+18. En la clase Service.java se observa el método *getTodo* que permite traer todos los elementos del *Todo* asociados a un id, el método *todoToHTMLRow* permite mostrar los elementos del *Todo* en fila y el método *todosToHTMLTable* construye una tabla con los atributos del *Todo*.
+
+## PARTE IV. FRAMEWORKS WEB MVC - JAVA SERVER FACES / PRIMEFACES    
+    
 
