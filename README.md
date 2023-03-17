@@ -665,58 +665,58 @@ Ahora la página se ve del siguiente modo después de realizar algunos intentos:
 ![con_lista](https://user-images.githubusercontent.com/123814482/226064860-33bc3096-7ed3-4079-99f0-b46e48c9acb2.jpg)
 
 ## BIBLIOGRAFÍA
-MVNRepository. (9 de abril del 2019). JavaEE Web API » 8.0.1. Recuperado de: <https://mvnrepository.com/artifact/javax/javaee-web-api/8.0.1>
+MVNRepository. (9 de abril del 2019). *JavaEE Web API » 8.0.1*. Recuperado de: <https://mvnrepository.com/artifact/javax/javaee-web-api/8.0.1>
 
-MVNRepository. (6 de enero del 2023). Gson » 2.10.1. Recuperado de: <https://mvnrepository.com/artifact/com.google.code.gson/gson/2.10.1>
+MVNRepository. (6 de enero del 2023). *Gson » 2.10.1*. Recuperado de: <https://mvnrepository.com/artifact/com.google.code.gson/gson/2.10.1>
 
-MVNRepository. (9 de abril del 2019). JavaEE Web API » 8.0.1. Recuperado de: <https://mvnrepository.com/artifact/javax/javaee-api/8.0.1>
+MVNRepository. (9 de abril del 2019). *JavaEE Web API » 8.0.1*. Recuperado de: <https://mvnrepository.com/artifact/javax/javaee-api/8.0.1>
 
-MVNRepository. (31 de julio del 2019). Oracle's Implementation of The JSF 2.2 Specification API. » 2.2.20. Recuperado de: <https://mvnrepository.com/artifact/com.sun.faces/jsf-api/2.2.20>
+MVNRepository. (31 de julio del 2019). *Oracle's Implementation of The JSF 2.2 Specification API. » 2.2.20*. Recuperado de: <https://mvnrepository.com/artifact/com.sun.faces/jsf-api/2.2.20>
 
-MVNRepository. (31 de julio del 2019). Oracle's Implementation of The JSF 2.2 Specification. » 2.2.20. Recuperado de: <https://mvnrepository.com/artifact/com.sun.faces/jsf-impl/2.2.20>
+MVNRepository. (31 de julio del 2019). *Oracle's Implementation of The JSF 2.2 Specification. » 2.2.20*. Recuperado de: <https://mvnrepository.com/artifact/com.sun.faces/jsf-impl/2.2.20>
 
-MVNRepository. (23 de junio del 2011). JSTL » 1.2. Recuperado de: <https://mvnrepository.com/artifact/javax.servlet/jstl/1.2>
+MVNRepository. (23 de junio del 2011). *JSTL » 1.2*. Recuperado de: <https://mvnrepository.com/artifact/javax.servlet/jstl/1.2>
 
-MVNRepository. (5 de octubre del 2023). PrimeFaces » 12.0.0. Recuperado de: <https://mvnrepository.com/artifact/org.primefaces/primefaces/12.0.0>
+MVNRepository. (5 de octubre del 2023). *PrimeFaces » 12.0.0*. Recuperado de: <https://mvnrepository.com/artifact/org.primefaces/primefaces/12.0.0>
 
-Oracle. (2013). The Java EE 6 Tutorial. Recuperado de: <https://docs.oracle.com/javaee/6/tutorial/doc/bnafu.html>
+Oracle. (2013). *The Java EE 6 Tutorial*. Recuperado de: <https://docs.oracle.com/javaee/6/tutorial/doc/bnafu.html>
 
-W3Schools. (s.f.). HTTP Request Methods. Recuperado de: <https://www.w3schools.com/tags/ref_httpmethods.asp>
+W3Schools. (s.f.). *HTTP Request Methods*. Recuperado de: <https://www.w3schools.com/tags/ref_httpmethods.asp>
 
-R, Fielding. M, Nottingham. J, Reschke. (Junio del 2022). RFC 9110 HTTP Semantics. Recuperado de: <https://www.rfc-editor.org/rfc/rfc9110#section-15>
+R, Fielding. M, Nottingham. J, Reschke. (Junio del 2022). *RFC 9110 HTTP Semantics*. Recuperado de: <https://www.rfc-editor.org/rfc/rfc9110#section-15>
 
-Wikipedia. (s.f.). List of HTTP status codes. Recuperado de: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
+Wikipedia. (s.f.). *List of HTTP status codes*. Recuperado de: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
 
-Oracle. (10 de febrero del 2011). Interface HttpServletResponse. Recuperado de: <https://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletResponse.html>
+Oracle. (10 de febrero del 2011). *Interface HttpServletResponse*. Recuperado de: <https://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletResponse.html>
 
-Oracle. (2020). Class FileNotFoundException. Recuperado de: <https://docs.oracle.com/javase/7/docs/api/java/io/FileNotFoundException.html>
+Oracle. (2020). *Class FileNotFoundException*. Recuperado de: <https://docs.oracle.com/javase/7/docs/api/java/io/FileNotFoundException.html>
 
-W3Schools. (s.f.). HTML JavaScript. Recuperado de: <https://www.w3schools.com/html/html_scripts.asp>
+W3Schools. (s.f.). *HTML JavaScript*. Recuperado de: <https://www.w3schools.com/html/html_scripts.asp>
 
-W3Schools. (s.f.). JavaScript Forms. Recuperado de: <https://www.w3schools.com/js/js_validation.asp>
+W3Schools. (s.f.). *JavaScript Forms*. Recuperado de: <https://www.w3schools.com/js/js_validation.asp>
 
-Çivici, Ç. (s.f.). PRIMEFACES USER GUIDE 5.2. Recuperado de: https://www.primefaces.org/docs/guide/primefaces_user_guide_5_2.pdf>
+Çivici, Ç. (s.f.). *PRIMEFACES USER GUIDE 5.2*. Recuperado de: https://www.primefaces.org/docs/guide/primefaces_user_guide_5_2.pdf>
 
-Curl. (s.f.). curl.1 the man page. Recuperado de: <https://curl.se/docs/manpage.html>
+Curl. (s.f.). *curl.1 the man page*. Recuperado de: <https://curl.se/docs/manpage.html>
 
-Curl. (s.f.). curl tutorial. Recuperado de: <https://curl.se/docs/manual.html>
+Curl. (s.f.). *curl tutorial*. Recuperado de: <https://curl.se/docs/manual.html>
 
-IETF. (Junio de 1999). 5.1.1 Method. Recuperado de: <https://www.rfc-editor.org/rfc/rfc2616#page-36>
+IETF. (Junio de 1999). *5.1.1 Method*. Recuperado de: <https://www.rfc-editor.org/rfc/rfc2616#page-36>
 
-Javatpoint. (s.f.). Curl Command in Linux with Examples. Recuperado de: <https://www.javatpoint.com/linux-curl-command>
+Javatpoint. (s.f.). *Curl Command in Linux with Examples*. Recuperado de: <https://www.javatpoint.com/linux-curl-command>
 
-Silva, C. (8 de marzo del 2023). HTTP Status Codes: A Complete List + Explanations. Recuperado de: <https://www.semrush.com/blog/http-status-codes/?kw=&cmp=LM_SRCH_DSA_Blog_EN&label=dsa_pagefeed&Network=g&Device=c&utm_content=622526966305&kwid=dsa-1754723155433&cmpid=18364824154&agpid=146618527572&BU=Core&extid=60109657981&adpos=&gclid=Cj0KCQjwn9CgBhDjARIsAD15h0DtXgpuHKdcp1r4cbwm1p2ZfuUVKsq9g63ux94ZBl7oJu0K5HG0k4EaArNaEALw_wcB>
+Silva, C. (8 de marzo del 2023). *HTTP Status Codes: A Complete List + Explanations*. Recuperado de: <https://www.semrush.com/blog/http-status-codes/?kw=&cmp=LM_SRCH_DSA_Blog_EN&label=dsa_pagefeed&Network=g&Device=c&utm_content=622526966305&kwid=dsa-1754723155433&cmpid=18364824154&agpid=146618527572&BU=Core&extid=60109657981&adpos=&gclid=Cj0KCQjwn9CgBhDjARIsAD15h0DtXgpuHKdcp1r4cbwm1p2ZfuUVKsq9g63ux94ZBl7oJu0K5HG0k4EaArNaEALw_wcB>
 
-mdn web docs. (2023). Métodos de petición HTTP. Recuperado de: <https://developer.mozilla.org/es/docs/Web/HTTP/Methods>
+mdn web docs. (2023). *Métodos de petición HTTP*. Recuperado de: <https://developer.mozilla.org/es/docs/Web/HTTP/Methods>
 
-W3Schools. (s.f.). HTML Tutorial. Recuperado de: <https://www.w3schools.com/html/>
+W3Schools. (s.f.). *HTML Tutorial*. Recuperado de: <https://www.w3schools.com/html/>
 
-Javatpoint. (s.f.). How to Generate Random Number in Java. Recuperado de: <https://www.javatpoint.com/how-to-generate-random-number-in-java>
+Javatpoint. (s.f.). *How to Generate Random Number in Java*. Recuperado de: <https://www.javatpoint.com/how-to-generate-random-number-in-java>
 
-Viñé, E. (30 de junio del 2010). Introducción a Primefaces. Recuperado de: <https://www.adictosaltrabajo.com/2010/06/30/introduccion-primefaces/>
+Viñé, E. (30 de junio del 2010). *Introducción a Primefaces*. Recuperado de: <https://www.adictosaltrabajo.com/2010/06/30/introduccion-primefaces/>
 
-Google Cloud. (11 de marzo del 2023). Configurar el descriptor de implementación de web.xml. Recuperado de: <https://cloud.google.com/appengine/docs/flexible/java/configuring-the-web-xml-deployment-descriptor?hl=es-419>
+Google Cloud. (11 de marzo del 2023). *Configurar el descriptor de implementación de web.xml*. Recuperado de: <https://cloud.google.com/appengine/docs/flexible/java/configuring-the-web-xml-deployment-descriptor?hl=es-419>
 
-Javatpoint. (s.f.). load on startup in web.xml. Recuperado de: <https://www.javatpoint.com/load-on-startup>
+Javatpoint. (s.f.). *load on startup in web.xml*. Recuperado de: <https://www.javatpoint.com/load-on-startup>
 
-Javatpoint. (s.f.). welcome-file-list in web.xml. Recuperado de: <https://www.javatpoint.com/welcome-file-list>
+Javatpoint. (s.f.). *welcome-file-list in web.xml*. Recuperado de: <https://www.javatpoint.com/welcome-file-list>
