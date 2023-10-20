@@ -51,7 +51,8 @@ public class OtherServlet extends HttpServlet {
             print_response = "Requerimiento inválido";
         }
 
-        responseWriter.write(print_response);
+        String clean_response = StringEscapeUtils.escapeHtml4(print_response);
+        responseWriter.write(clean_response);
     }
 
     @Override
