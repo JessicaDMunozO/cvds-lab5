@@ -6,11 +6,14 @@ import java.io.Writer;
 import java.nio.charset.MalformedInputException;
 import java.util.ArrayList;
 import java.util.Optional;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.text.StringEscapeUtils;
 
 import edu.eci.cvds.servlet.model.Todo;
 
@@ -82,6 +85,7 @@ public class OtherServlet extends HttpServlet {
             print_response = "Requerimiento inválido";
         }
 
-        responseWriter.write(print_response);
+        String clean_response = StringEscapeUtils.escapeHtml4(print_response);
+        responseWriter.write(clean_response);
     }
 }
